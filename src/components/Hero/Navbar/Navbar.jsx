@@ -81,15 +81,19 @@ const Navbar = () => {
     <div className="overflow-x-hidden">
       <nav
         className={` flex border-2 items-center px-3 py-4 transform transition-transform duration-300 ease-in-out ${
-          open ? "translate-x-64" : "translate-x-0"
+          open
+            ? "translate-x-64"
+            : "translate-x-0 md:border-green-500 md:py-[4.2rem] md:px-14"
         }`}
       >
         <AiOutlineMenu
-          className="scale-[2.5] mx-4 mr-8"
+          className="scale-[2.5] mx-4 mr-[5%] md:scale-[2]"
           onClick={toggleDrawer(true)}
         />
-        <h1 className="text-4xl cormorant-garamond-semibold">Grette</h1>
-        <div className="flex items-center ml-auto border-2 ">
+        <h1 className="text-4xl cormorant-garamond-semibold md:text-6xl">
+          Grette
+        </h1>
+        <div className="flex items-center ml-auto border-2 mr-[15%]">
           <p className="text-xl mx-2">EN</p>
           <IoMdArrowDropdown className="scale-[1.8]" />
         </div>

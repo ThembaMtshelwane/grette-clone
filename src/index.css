@@ -41,3 +41,7 @@
 .placeholder-text {
   @apply text-red-600;
 }
+
+.underline-cursive:hover {
+  text-decoration: none;
+}
