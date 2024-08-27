@@ -20,12 +20,12 @@ const Navbar = () => {
 
   const SideBar = () => (
     <section
-      className="w-screen h-screen bg-backgroundColour flex flex-col  "
+      className="w-screen h-screen bg-backgroundColour flex flex-col max-w-[550px] "
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
-      <nav className="flex border-2 items-center px-3 py-4">
+      <nav className="flex border-2 items-center px-3 py-4 w-full">
         <IoCloseOutline
           className="scale-[2.5] mx-4 mr-8"
           onClick={toggleDrawer(true)}
