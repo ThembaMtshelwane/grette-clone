@@ -5,8 +5,20 @@ export default {
     extend: {
       colors: {
         backgroundColour: "#dbd5cd",
+        accent: "#c5beb5",
+        placeholder: "#f0f0f0",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".placeholder-color": {
+          "::placeholder": {
+            color: "#ffffff",
+          },
+        },
+      });
+    },
+  ],
 };
