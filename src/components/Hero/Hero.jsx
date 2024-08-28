@@ -8,12 +8,16 @@ const Hero = () => {
     <section className="bg-backgroundColour h-[52vh] md:h-[70vh] border-blue-300 border-[10px] ">
       <Navbar open={open} setOpen={setOpen} />
       <div
-        className={`flex transform transition-transform duration-300 ease-in-out  border-[5px] h-full items-center border-yellow-400 ${
-          open ? "translate-x-64 ml-[60%]" : "translate-x-0 md:border-green-500"
+        className={`flex transform transition-transform duration-300 ease-in-out border-[5px] h-full items-center border-yellow-400 ${
+          open ? "translate-x-64 ml-[35%]" : "translate-x-0 md:border-green-500"
         }`}
       >
-        <section className=" w-full overflow-hidden flex flex-col h-[70%] justify-center border-2 border-red-500 p-4 lg:p-0 md:border-green-500 md:w-[80%] md:h-fit md:mx-auto md:mt-32">
-          <section className="border-2 border-red-500 md:my-auto md:mr-auto h-[60%] md:w-[30%]">
+        <section className=" w-full flex flex-col h-[70%] justify-center border-2 border-red-500 p-4 lg:p-0 md:border-green-500 md:w-[60%] md:h-fit md:mx-auto  md:mt-32">
+          <section
+            className={`border-2 border-red-500 md:my-auto md:mr-auto h-[60%] md:w-[80%] md:max-w-[350px] ${
+              open ? "md:ml-[15%]" : "md:ml-0"
+            }  `}
+          >
             <ul className="flex flex-col item border-2">
               <li>
                 <a href="/">

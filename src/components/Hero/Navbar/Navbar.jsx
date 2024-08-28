@@ -29,7 +29,7 @@ const Navbar = ({ open, setOpen }) => {
         </div>
       </nav>
 
-      <section className="p-5 flex flex-col my-auto border-2 h-[50%] w-[65%] md:border-red-600 md:max-w-[350px] md:ml-[20%]">
+      <section className="p-5 flex flex-col my-auto border-2 h-[50%] w-[65%] md:border-red-600 md:w-[75%] md:ml-[5%]">
         <section className="mb-4">
           <a href="/">
             <h3 className="h3-style"> Employees</h3>
@@ -68,7 +68,7 @@ const Navbar = ({ open, setOpen }) => {
         </section>
       </section>
 
-      <section className="absolute w-[35%] h-full right-0 ">
+      <section className="absolute w-[17%]  h-full right-0 md:w-[35%]">
         <img className="h-full" src="/2.PNG" alt="" />
       </section>
     </section>
@@ -105,7 +105,7 @@ const Navbar = ({ open, setOpen }) => {
         onClose={toggleDrawer(false)}
         variant="persistent"
         PaperProps={{
-          className: "w-full sm:w-[70%]",
+          className: "w-full md:w-[70%]",
         }}
       >
         {SideBar()}
