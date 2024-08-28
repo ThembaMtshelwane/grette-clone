@@ -3,34 +3,29 @@ import { CiSearch } from "react-icons/ci";
 
 const Hero = () => {
   return (
-    <section className="bg-backgroundColour h-[49vh] md:h-[70vh]">
+    <section className="bg-backgroundColour h-[52vh] md:h-[70vh]">
       <Navbar />
-      <section className="flex flex-col h-[70%] justify-center border-2 border-red-500 p-4 md: md:border-green-500 md:flex-row md:w-[80%] md:h-fit md:mx-auto">
-        <section className="border-2 border-red-500 md:my-auto md:mr-auto h-[60%] md:w-[350px]">
+      <section className="flex flex-col h-[70%] justify-center border-2 border-red-500 p-4 lg:p-0 md:border-green-500 md:w-[80%] md:h-fit md:mx-auto mt-32">
+        <section className="border-2 border-red-500 md:my-auto md:mr-auto h-[60%] md:w-[30%]">
           <ul className="flex flex-col item border-2">
             <li>
               <a href="/">
-                <h3 className="underline-cursive border-b-2 w-fit border-black hover:border-none md:text-6xl md:mb-2 italic">
-                  Lawyers.
-                </h3>
+                <h3 className=" underline-links">Lawyers.</h3>
               </a>
             </li>
             <li>
               <a href="/">
-                <h3 className="underline-cursive border-b-2 w-fit border-black hover:border-none md:text-6xl italic">
-                  {" "}
-                  Expertise.
-                </h3>
+                <h3 className="underline-links ">Expertise.</h3>
               </a>
             </li>
           </ul>
-          <section className="flex items-center mt-10">
+          <section className="flex items-center mt-7 border-2 sm:border-yellow-400">
             <input
               type="text"
               placeholder="Search"
-              className="bg-accent placeholder-color w-[90%] p-2 focus:outline-none"
+              className="bg-[#d5ccc1] placeholder-black w-[90%] p-2 focus:outline-none "
             />
-            <CiSearch className="bg-accent p-1 w-[20px] scale-[2.5]" />
+            <CiSearch className="bg-[#d5ccc1] p-1 max-w-[20px] scale-[2.5]" />
           </section>
         </section>
         <section

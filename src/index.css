@@ -38,10 +38,10 @@
   }
 }
 
-.placeholder-text {
-  @apply text-red-600;
+.language-links {
+  @apply text-xl mx-2 hover:border-b-2 hover:border-white;
 }
 
-.underline-cursive:hover {
-  text-decoration: none;
+.underline-links {
+  @apply border-b-2 w-fit border-black hover:border-none text-[34px] md:text-5xl md:mb-2 italic;
 }
