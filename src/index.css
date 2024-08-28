@@ -24,17 +24,37 @@
 @tailwind utilities;
 
 @layer components {
-  h3 {
+  .h3-style {
+    @apply font-serif font-medium text-[28px] md:text-[35px];
     font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-size: 28px;
   }
-  h4 {
-    font-family: "Playfair Display ", serif;
-    font-weight: 400;
-    font-size: 17px;
+
+  .h4-style {
+    @apply font-serif font-normal text-[17px] mb-[4px] md:text-[20px];
+    font-family: "Playfair Display", serif;
     font-style: normal;
-    margin-bottom: 4px;
+  }
+
+  .drawer-width-sm {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    /* Tailwind's sm breakpoint */
+    .drawer-width-sm {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    /* Tailwind's md breakpoint */
+    .drawer-width-sm {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1024px) {
+    /* Tailwind's lg breakpoint */
+    .drawer-width-sm {
+      width: 100%;
+    }
   }
 }
 

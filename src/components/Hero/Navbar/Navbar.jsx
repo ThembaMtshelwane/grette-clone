@@ -1,68 +1,61 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Drawer } from "@mui/material";
-import { useState } from "react";
+
 import { IoCloseOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-
-  const toggleDrawer = (open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-    setOpen(open);
+const Navbar = ({ open, setOpen }) => {
+  const toggleDrawer = (state) => () => {
+    setOpen(state);
   };
 
   const SideBar = () => (
     <section
-      className="w-screen h-screen bg-backgroundColour flex flex-col max-w-[550px] "
+      className="w-full h-screen bg-backgroundColour flex flex-col relative md:w-[100%]"
       role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
     >
-      <nav className="flex border-2 items-center px-3 py-4 w-full">
+      <nav className="flex border-2 items-center px-3 py-4 w-full  md:border-green-500 md:pt-14">
         <IoCloseOutline
           className="scale-[2.5] mx-4 mr-8"
-          onClick={toggleDrawer(true)}
+          onClick={toggleDrawer(false)}
         />
-        <h1 className="text-4xl cormorant-garamond-semibold">Grette</h1>
-        <div className="flex items-center ml-auto border-2 ">
+        <h1 className="text-4xl cormorant-garamond-semibold  md:text-6xl">
+          Grette
+        </h1>
+        <div className="flex items-center ml-auto border-2 md:hidden ">
           <p className="text-xl mx-2">EN</p>
           <IoMdArrowDropdown className="scale-[1.8]" />
         </div>
       </nav>
-      <section className="p-5 flex flex-col my-auto border-2 h-[50%] w-[65%]">
+
+      <section className="p-5 flex flex-col my-auto border-2 h-[50%] w-[65%] md:border-red-600 md:max-w-[350px] md:ml-[20%]">
         <section className="mb-4">
           <a href="/">
-            <h3 className=""> Employees</h3>
+            <h3 className="h3-style"> Employees</h3>
           </a>
           <a href="/">
-            <h3> Expertise</h3>
+            <h3 className="h3-style"> Expertise</h3>
           </a>
           <a href="/">
-            <h3> About Grette</h3>
+            <h3 className="h3-style"> About Grette</h3>
           </a>
         </section>
-        <section className="mb-4">
+        <section className="mb-10">
           <a href="/">
-            <h4>Doing Business in Norway </h4>
+            <h4 className="h4-style">Doing Business in Norway </h4>
           </a>
           <a href="/">
-            <h4>Sustainability </h4>
+            <h4 className="h4-style">Sustainability </h4>
           </a>
           <a href="/">
-            <h4>Career </h4>
+            <h4 className="h4-style"> Career </h4>
           </a>
           <a href="/">
-            <h4>Grette High-Q</h4>
+            <h4 className="h4-style">Grette High-Q</h4>
           </a>
           <a href="/">
-            <h4>Standard Terms of Engagement</h4>
+            <h4 className="h4-style">Standard Terms of Engagement</h4>
           </a>
         </section>
         <section className="flex items-center mt-10">
@@ -74,11 +67,15 @@ const Navbar = () => {
           <CiSearch className="bg-accent p-1 w-[20px] scale-[2.5]" />
         </section>
       </section>
+
+      <section className="absolute w-[35%] h-full right-0 ">
+        <img className="h-full" src="/2.PNG" alt="" />
+      </section>
     </section>
   );
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="fixed w-full z-[999]">
       <nav
         className={`flex border-2 items-center px-3 py-4 transform transition-transform duration-300 ease-in-out ${
           open ? "translate-x-64" : "translate-x-0 md:border-green-500 md:pt-14"
@@ -91,18 +88,26 @@ const Navbar = () => {
         <h1 className="text-4xl cormorant-garamond-semibold md:text-6xl">
           Grette
         </h1>
-        {/* <div className="flex items-center ml-auto border-2 mr-[10%] md:hidden">
+        <div className="flex items-center ml-auto border-2 mr-[10%] md:hidden">
           <p className="text-xl mx-2">EN</p>
           <IoMdArrowDropdown className="scale-[1.8]" />
-        </div> */}
+        </div>
 
-        <div className="flex text-white mr-[10%] items-center ml-auto  ">
+        <div className="hidden text-white mr-[10%] items-center ml-auto  md:flex">
           <p className="language-links">NO</p>/
           <p className="language-links">EN</p>/
           <p className="language-links">DE</p>
         </div>
       </nav>
-      <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+      <Drawer
+        anchor="left"
+        open={open}
+        onClose={toggleDrawer(false)}
+        variant="persistent"
+        PaperProps={{
+          className: "w-full sm:w-[70%]",
+        }}
+      >
         {SideBar()}
       </Drawer>
     </div>
