@@ -1,0 +1,84 @@
+{
+  "lawyers": [
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/IbeicDDN205izBNGbqZhxWUsBsevlxGgVQQhFcDc.jpeg?w=400",
+      "name": "Olav Myrstad",
+      "position": "IT Manager"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/FaODzn736MyyKOpf10peMuzMaLSrbuxttZzkjlOb.jpeg?w=400",
+      "name": "Martine Sorensen",
+      "position": "IT Attorney"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/uRcZgvTr6vE2OGixBAScg4gmdM4vYhSQMBqI8T5g.jpeg?w=400",
+      "name": "Helene ErØy Bilet",
+      "position": "Associate"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/KR8MeLSwRBiGO1Pzb16Ntc49R6SJzTKnFUuyHcNO.jpeg?w=600",
+      "name": "Fredrick Backer",
+      "position": "Senior Attorney"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/nTXmjzh9IYOy8hGl27VHSlCsBkOD4Dd5jKfTxT1a.jpeg?w=400",
+      "name": "Joachim Haaland",
+      "position": "Associate"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/QeNfFkNKez5MbMS3rK0SZxnl3Hq7fFpDMMRfe8FL.jpeg?w=400",
+      "name": "Annika Blich",
+      "position": "Associate"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/z9EaGnbeFAbN23sLo3PylZ0KjscUUJazwAWKsk7o.jpeg?w=400",
+      "name": "Mariell Gabrielson",
+      "position": "Senior Attorney"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/content/uploads/2017/11/05140509/Marius-Langnes-2.jpg",
+      "name": "Marius Svedsvoll Langnes",
+      "position": "IT Manager"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/IbeicDDN205izBNGbqZhxWUsBsevlxGgVQQhFcDc.jpeg?w=400",
+      "name": "Olav Myrstad",
+      "position": "IT Manager"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/FaODzn736MyyKOpf10peMuzMaLSrbuxttZzkjlOb.jpeg?w=400",
+      "name": "Martine Sorensen",
+      "position": "IT Attorney"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/uRcZgvTr6vE2OGixBAScg4gmdM4vYhSQMBqI8T5g.jpeg?w=400",
+      "name": "Helene ErØy Bilet",
+      "position": "Associate"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/KR8MeLSwRBiGO1Pzb16Ntc49R6SJzTKnFUuyHcNO.jpeg?w=600",
+      "name": "Fredrick Backer",
+      "position": "Senior Attorney"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/nTXmjzh9IYOy8hGl27VHSlCsBkOD4Dd5jKfTxT1a.jpeg?w=400",
+      "name": "Joachim Haaland",
+      "position": "Associate"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/QeNfFkNKez5MbMS3rK0SZxnl3Hq7fFpDMMRfe8FL.jpeg?w=400",
+      "name": "Annika Blich",
+      "position": "Associate"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/z9EaGnbeFAbN23sLo3PylZ0KjscUUJazwAWKsk7o.jpeg?w=400",
+      "name": "Mariell Gabrielson",
+      "position": "Senior Attorney"
+    },
+    {
+      "image": "https://grette-intra.fra1.digitaloceanspaces.com/content/uploads/2017/11/05140509/Marius-Langnes-2.jpg",
+      "name": "Marius Svedsvoll Langnes",
+      "position": "IT Manager"
+    }
+  ]
+}
