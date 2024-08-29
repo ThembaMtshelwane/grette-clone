@@ -12,6 +12,7 @@ const Hero = () => {
           open ? "translate-x-72 ml-[35%]" : "translate-x-0 md:border-green-500"
         }`}
       >
+        lol
         <section
           className={`w-full flex flex-col h-[70%] justify-center border-2 border-red-500 p-4 lg:p-0 lg:w-[50%] md:border-green-500 md:h-fit md:mx-auto  md:mt-32 ${
             open ? "md:w-[100%]" : " md:w-[80%]"
