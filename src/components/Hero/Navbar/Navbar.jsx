@@ -15,7 +15,7 @@ const Navbar = ({ open, setOpen }) => {
       className="overflow-x-hidden w-full h-screen bg-backgroundColour flex flex-col relative md:w-[100%]"
       role="presentation"
     >
-      <nav className="flex border-2 items-center px-3 py-4 w-full  md:border-green-500 md:pt-14">
+      <nav className="flex  items-center px-3 py-4 w-full   md:pt-14">
         <IoCloseOutline
           className="scale-[2.5] mx-4 mr-8"
           onClick={toggleDrawer(false)}
@@ -23,14 +23,14 @@ const Navbar = ({ open, setOpen }) => {
         <h1 className="text-4xl cormorant-garamond-semibold  md:text-6xl">
           Grette
         </h1>
-        <div className="flex items-center ml-auto border-2 md:hidden ">
+        <div className="flex items-center ml-auto  md:hidden ">
           <p className="text-xl mx-2">EN</p>
           <IoMdArrowDropdown className="scale-[1.8]" />
         </div>
       </nav>
 
-      <section className="flex flex-col justify-center h-full border-2">
-        <section className="p-5 flex flex-col border-2 h-[90%] w-[65%] md:border-red-600 md:w-[60%] md:ml-[5%]">
+      <section className="flex flex-col justify-center h-full ">
+        <section className="p-5 flex flex-col  h-[90%] w-[65%]  md:w-[60%] md:ml-[5%]">
           <section className="mb-4">
             <a href="/">
               <h3 className="h3-style"> Employees</h3>
@@ -83,8 +83,8 @@ const Navbar = ({ open, setOpen }) => {
   return (
     <div className="fixed w-full z-[999]">
       <nav
-        className={`flex border-2 items-center px-3 py-4 transform transition-transform duration-300 ease-in-out ${
-          open ? "translate-x-64" : "translate-x-0 md:border-green-500 md:pt-14"
+        className={`flex  items-center px-3 py-4 transform transition-transform duration-300 ease-in-out ${
+          open ? "translate-x-64" : "translate-x-0  md:pt-14"
         }`}
       >
         <AiOutlineMenu
@@ -94,7 +94,7 @@ const Navbar = ({ open, setOpen }) => {
         <h1 className="text-4xl cormorant-garamond-semibold md:text-6xl">
           Grette
         </h1>
-        <div className="flex items-center ml-auto border-2 mr-[10%] md:hidden">
+        <div className="flex items-center ml-auto  mr-[10%] md:hidden">
           <p className="text-xl mx-2">EN</p>
           <IoMdArrowDropdown className="scale-[1.8]" />
         </div>
