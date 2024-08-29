@@ -12,11 +12,11 @@ const Main = () => {
   };
 
   return (
-    <section className="bg-[#e4e0db] min-h-screen py-4 px-5">
-      <h3 className="my-8 text-2xl cormorant-garamond-medium">
+    <section className="bg-[#e4e0db] min-h-screen py-4 px-5 md:px-20 xl:px-48 ">
+      <h3 className="my-8 text-2xl cormorant-garamond-medium xl:py-4">
         Meet some of our staff
       </h3>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {lawyers.map((lawyer, index) => (
           <div key={index} className=" ">
             <div key={index} className="border-2 border-red-400 h-[100%] ">
@@ -26,8 +26,10 @@ const Main = () => {
                 className="w-full h-[80%] object-cover cursor-pointer "
                 onClick={() => handleImageClick(lawyer.name)}
               />
-              <p className="font-semibold leading-4 text-sm ">{lawyer.name}</p>
-              <p className="italic text-sm ">{lawyer.position}</p>
+              <p className="font-semibold leading-4 text-sm md:text-lg  lg:text-2xl  ">
+                {lawyer.name}
+              </p>
+              <p className="italic text-sm  lg:text-lg">{lawyer.position}</p>
               <br />
             </div>
           </div>
