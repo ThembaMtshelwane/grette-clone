@@ -5,21 +5,21 @@ import { useState } from "react";
 const Hero = () => {
   const [open, setOpen] = useState(false);
   return (
-    <section className="bg-backgroundColour h-[52vh] md:h-[70vh] border-blue-300 border-[10px] overflow-x-hidden ">
+    <section className="bg-backgroundColour h-[52vh] md:h-[70vh] overflow-x-hidden ">
       <Navbar open={open} setOpen={setOpen} />
       <div
-        className={`flex   transform transition-transform duration-300 ease-in-out border-[5px] h-full items-center border-yellow-400 ${
-          open ? "translate-x-72 ml-[35%]" : "translate-x-0 md:border-green-500"
+        className={`flex   transform transition-transform duration-300 ease-in-out border-[5px] h-full items-center  ${
+          open ? "translate-x-72 ml-[35%]" : "translate-x-0 "
         }`}
       >
-        lol
+        
         <section
-          className={`w-full flex flex-col h-[70%] justify-center border-2 border-red-500 p-4 lg:p-0 lg:w-[50%] md:border-green-500 md:h-fit md:mx-auto  md:mt-32 ${
+          className={`w-full flex flex-col h-[70%] justify-center border-2  p-4 lg:p-0 lg:w-[50%]  md:h-fit md:mx-auto  md:mt-32 ${
             open ? "md:w-[100%]" : " md:w-[80%]"
           }  `}
         >
           <section
-            className={`border-2 border-red-500 md:my-auto md:mr-auto h-[60%] md:w-[80%] md:max-w-[350px] ${
+            className={`border-2  md:my-auto md:mr-auto h-[60%] md:w-[80%] md:max-w-[350px] ${
               open ? "md:ml-[0%]" : "md:ml-0"
             }  `}
           >
