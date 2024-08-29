@@ -25,8 +25,9 @@
 
 @layer components {
   .h3-style {
-    @apply font-serif font-medium text-[28px] md:text-[35px];
+    @apply font-serif font-medium text-[28px] md:text-[35px] w-[30%] min-w-fit;
     font-family: "Cormorant Garamond", serif;
+    border: 2px solid red;
   }
 
   .h4-style {
