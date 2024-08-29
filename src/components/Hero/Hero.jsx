@@ -18,11 +18,11 @@ const Hero = () => {
           }  `}
         >
           <section
-            className={`  md:my-auto md:mr-auto h-[60%] md:w-[80%] md:max-w-[350px] ${
+            className={`flex md:block md:my-auto md:mr-auto h-[60%] md:w-[80%] md:max-w-[350px] ${
               open ? "md:ml-[0%]" : "md:ml-0"
             }  `}
           >
-            <ul className="flex flex-col item ">
+            <ul className="hidden md:flex flex-col item ">
               <li>
                 <a href="/">
                   <h3 className="h3-style  underline-links">Lawyers.</h3>
@@ -34,7 +34,7 @@ const Hero = () => {
                 </a>
               </li>
             </ul>
-            <section className="flex items-center mt-7   ">
+            <section className="flex items-center  w-full   ">
               <input
                 type="text"
                 placeholder="Search"
